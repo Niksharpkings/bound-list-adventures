@@ -23,7 +23,7 @@ And what activities they will be doing during their trip to their destination be
 -Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 Specifications:
-CSS: Semantic UI 
+CSS: Semantic UI
 Javascrip: React's
 Html: React's
 
@@ -43,3 +43,4 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 - github.com/CodySawa
 - github.com/Daypolk19
 - github.com/ArbiNazari
+
