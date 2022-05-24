@@ -26,9 +26,9 @@ Specifications:
 CSS: Semantic UI 
 Javascrip: React's
 Html: React's
-Database: Mongodb and Mongoose ODM
-Deployment: Heroku (with Data)
 
+Deployment: Heroku (with Data: mongoAtlas)
+Database: Mongodb and Mongoose ODM
 
 Milestones
 Lorem ipsum
