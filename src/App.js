@@ -3,12 +3,12 @@ import './App.css';
 import {GoogleLogin} from 'react-google-login'
 
 function App() {
-  const responseGoogle = response => {
+  const responseGoogle = (response) => {
     console.log(response)
   }
 
-  function responseError(Error) {
-    console.log(Error);
+  const responseError = (error) => {
+    console.log(error)
   }
   return (
 <div>
@@ -16,7 +16,7 @@ function App() {
         <h1> Boundlist Adventures Calendar </h1>
       </div>
       <div>
-        <GoogleLogin clientId='739819841055-v1hjgm125rin2g5qts9phuocp1nrro5l.apps.googleusercontent.com'
+        <GoogleLogin clientId='170577696615-tpfe1ghcnohr1a5imjtp75a0u9qn5prj.apps.googleusercontent.com'
         buttonText='Sign in and Authorize Calender'
         onSuccess={responseGoogle}
         onFailure={responseError} 
