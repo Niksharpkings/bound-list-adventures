@@ -28,23 +28,6 @@ CSS: Semantic UI
 Javascrip: React's
 Html: React's
 
-Deployment: Heroku (with Data: mongoAtlas)
-Database: Mongodb and Mongoose ODM
-
-Milestones
-Lorem ipsum
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-Dolor sit amet
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-github.com/niksharpkings
-github.com/Lanikathomas
-github.com/Simmy21
-github.com/Waddles1005
-github.com/CodySawa
-github.com/Daypolk19
-github.com/ArbiNazari
-=======
 - Use React for the front end.
 - Use GraphQL with a Node.js and Express.js server.
 - Use MongoDB and the Mongoose ODM for the database.
@@ -58,6 +41,7 @@ github.com/ArbiNazari
 - Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, quality comments, etc.).
 -Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
+=======
 Specifications:
 CSS: Semantic UI
 Javascrip: React's
