@@ -16,36 +16,34 @@
   <meta name="description"
     content="Web site created using create-react-app. Flight travel itinerary, bound list of adventures" />
   <!-- link bootstap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet noopener noreferrer nofollow"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <!-- link fontawesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet noopener noreferrer nofollow" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- link custom css-->
   <link rel="stylesheet" href="css/style.css" />
   <!--- Favicon -->
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon noopener noreferrer nofollow" href="%PUBLIC_URL%/favicon.ico" />
   <!--- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet noopener noreferrer nofollow" />
   <!-- apple touch icon-->
   <!--manifest.json provides metadata used when your web app is installed on a user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/-->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest noopener noreferrer nofollow" href="%PUBLIC_URL%/manifest.json" crossorigin="use-credentials" />
   <!--For IE-->
   <!--- Icons -->
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <!--apple touch icon public log192.png-->
   <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
   <!--apple touch icon public n/a-->
-  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+  <link rel="icon" type="image/png noopener noreferrer nofollow" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
   <!--apple touch icon public 32x32 n/a-->
-  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+  <link rel="icon" type="image/png noopener noreferrer nofollow" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
   <!--apple touch icon public 32x32 n/a-->
-  <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" crossorigin="use-credentials" />
-  <!-- webmanifest %PUBLIC_URL%/site.webmanifest https://developer.mozilla.org/en-US/docs/Web/Manifest  -->
-  <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="mask-icon noopener noreferrer nofollow" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5" crossorigin="use-credentials" />
   <!--safari pin icon public safari-pinned-tab.svg-->
   <meta name="msapplication-TileColor" content="#da532c" />
   <!--microsoft tile color public da532c-->
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#ffffff" />
   <!--microsoft theme color public 000000-->
 
   <!--
@@ -81,35 +79,30 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link fa fa-map-o"
-              href="
-                                            https://www.google.com/maps/place/UCLA+Extension+Westwood+Center/@34.0621945,-118.4471735,17z/data=!3m2!4b1!5s0x80c2bc815d8712e9:0x14dc4f337e3c369!4m5!3m4!1s0x80c2bc8160e49741:0xf258a55ecc86d598!8m2!3d34.0621901!4d-118.4449848">
+            target="_black" rel="noopener noreferrer nofollow"
+              href="https://www.google.com/maps/place/UCLA+Extension+Westwood+Center/@34.0621945,-118.4471735,17z/data=!3m2!4b1!5s0x80c2bc815d8712e9:0x14dc4f337e3c369!4m5!3m4!1s0x80c2bc8160e49741:0xf258a55ecc86d598!8m2!3d34.0621901!4d-118.4449848">
               Location</a>
           </li>
           <li class="nav-item active">
-            <a class="navbar-brand fa fa-paper-plane-o" href="
-                                    https://localhost:3000/api/v1/flights">Flights</a>
+            <a class="navbar-brand fa fa-paper-plane-o" href="/api/v1/flights">Flights</a>
           </li>
           <li class="nav-item active">
-            <a class="navbar-brand fa fa-blind" href="
-                                            https://localhost:3000/api/v1/Adventures">Adventures</a>
+            <a class="navbar-brand fa fa-blind" href="/api/v1/Adventures">Adventures</a>
           </li>
           <li class="nav-item active">
-            <a class="navbar-brand fa fa-calendar" href="
-                                                    https://localhost:3000/api/v1/schedule">Schedule</a>
+            <a class="navbar-brand fa fa-calendar" href="/api/v1/schedule">Schedule</a>
           </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <div class="navbar-sign-up-register">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <button class="btn btn-danger navbar-btn fa fa-sign-in">-Login</button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-danger navbar-btn fa fa-pencil-square-o">-Register</button>
-              </li>
-            </ul>
-          </div>
+        <ul class="nav navbar-nav navbar-right mr-auto">
+          <li class="nav-item active">
+            <button class="btn btn-danger navbar-btn fa fa-sign-in">-Login</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-danger navbar-btn fa fa-pencil-square-o">-Register</button>
+          </li>
         </ul>
+        <div class="navbar-sign-up-register">
+        </div>
       </div>
     </nav>
   </header>
@@ -118,8 +111,7 @@
 
   <main>
     <!--- Itinerary Navigation -->
-    <section class="flightItinerary"
-      id="flightItinerary">
+    <section class="flightItinerary" id="flightItinerary">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -228,54 +220,56 @@
                     <div class="col-md-9">
                       <h4>
                         <a href="#">
-                          Flight Name
+                          Flight ID:
+                          <span class="flight0ID" id="flight0ID">boeinglax747a999b</span>
                         </a>
                       </h4>
                       <p>
                         <span class="text-dark">
-                          <em class="fa fa-map-marker"></em>
+                          <em class="fa fa-map-marker fa-1x"></em>
                           <label for="">
                             Departure:
                           </label>
-                          <input class="departure" id="departureId" type="date" name="departure" value="" readonly>
+                          <input type="datetime"  class="departure" id="departureId" title="departure" name="departure" value="" readonly>
                         </span>
                         <span class="text-dark">
-                          <em class="fa fa-map-marker"></em>
+                          <em class="fa fa-map-marker fa-1x"></em>
                           <label class="Returndate">
                             Return:
-                            <input class="Returndate" id="ReturndateId" type="date" name="Returndate" value="" readonly>
+                            <input type="datetime" class="returnDate" id="returnDateId" title="returnDate" name="returnDate" value="" readonly>
                           </label>
                         </span>
                         <span class="text-dark">
-                          <em class="fa fa-clock-o"></em>
+                          <em class="fa fa-clock-o fa-1x"></em>
                           <label class="duration">
                             Duration:
                             <input
                               type="text"
-                              class="form-control"
+                              class="form-control fa-1x"
                               placeholder="Duration"
-                              id="duration"
-                              name="duration"
+                              id="durationInputId"
+                              name="durationInput"
                               value="1h 30m"
+                              title="durationInput"
                               readonly />
                           </label>
                         </span>
                       </p>
                       <p>
                         <span class="text-dark">
-                          <em class="fa fa-calendar"></em>
+                          <em class="fa fa-calendar fa-1x"></em>
                           Jan 18, 2019
                         </span>
                         <span class="text-dark">
                           <label>
-                            <em class="fa fa-user"></em>
+                            <em class="fa fa-user fa-1x"></em>
                             Passengers
                           </label>
                           <input
                             type="text"
                             class="form-control"
                             placeholder="Passengers"
-                            id="passengers"
+                            id="passengers1"
                             name="passengers"
                             value="3"
                             readonly />
@@ -283,7 +277,7 @@
                       </p>
                       <p>
                         <span class="text-dark">
-                          <em class="fa fa-plane"></em>
+                          <em class="fa fa-plane fa-1x"></em>
                           Non-stop
                         </span>
                       </p>
@@ -294,7 +288,7 @@
               <div class="card">
                 <div class="card-header">
                   <h4>
-                    <em class="fa fa-plane"></em> Flight
+                    <em class="fa fa-plane fa-1x"></em> Flight
                   </h4>
                 </div>
                 <div class="card-body">
@@ -308,32 +302,32 @@
                     <div class="col-md-9">
                       <h4>
                         <a href="#">
-                          Enter Flight ID:<br>
-                          <span class="flightID" id="flighIDId">boeinglax747a1234b</span> </a>
+                          Flight ID:<br>
+                          <span class="fligh1tID" id="flight1IDId">boeinglax747a1234b</span> </a>
                       </h4>
                       <p>
                         <span class="text-dark">
-                          <em class="fa fa-map-marker"></em>
+                          <em class="fa fa-map-marker fa-1x"></em>
                           Los Angeles, CA
                         </span>
                         <span class="text-dark">
-                          <em class="fa fa-clock-o"></em>
+                          <em class="fa fa-clock-o fa-1x"></em>
                           1h 30m
                         </span>
                       </p>
                       <p>
                         <span class="text-dark">
-                          <em class="fa fa-calendar"></em>
+                          <em class="fa fa-calendar fa-1x"></em>
                           Jan 18, 2019
                         </span>
                         <span class="text-dark">
-                          <em class="fa fa-user"></em>
+                          <em class="fa fa-user fa-1x"></em>
                           3 Passengers
                         </span>
                       </p>
                       <p>
                         <span class="text-dark">
-                          <em class="fa fa-plane"></em>
+                          <em class="fa fa-plane fa-1x"></em>
                           Non-stop
                         </span>
                       </p>
@@ -344,7 +338,7 @@
               <div class="card">
                 <div class="card-header">
                   <h4>
-                    <em class="fa fa-plane"></em> Flight
+                    <em class="fa fa-plane fa-1x"></em> Flight
                   </h4>
                 </div>
                 <div class="card-body">
@@ -353,40 +347,49 @@
                       <img
                         src="https://ak.picdn.net/shutterstock/videos/1017472291/thumb/1.jpg"
                         alt="image-preview"
-                        class="img-fluid" /> "src=https://..."
+                        class="img-fluid fa-1x" />
                     </div>
                     <div class="col-md-9">
-                      <h4>
-                        <a href="#">
-                          Flight Name
-                        </a>
-                      </h4>
-                      <p>
-                        <span class="text-dark">
-                          <i class="fa fa-map-marker"></i>
-                          Los Angeles, CA
-                        </span>
-                        <span class="text-dark">
-                          <i class="fa fa-clock-o"></i>
-                          1h 30m
-                        </span>
-                      </p>
-                      <p>
-                        <span class="text-dark">
-                          <i class="fa fa-calendar"></i>
-                          Jan 18, 2019
-                        </span>
-                        <span class="text-dark">
-                          <i class="fa fa-user"></i>
-                          3 Passengers
-                        </span>
-                      </p>
-                      <p>
-                        <span class="text-dark">
-                          <i class="fa fa-plane"></i>
-                          Non-stop
-                        </span>
-                      </p>
+                      <div>
+                        <h4>
+                          <a href="#">
+                            Flight ID:
+                            <span class="flight2ID fa-1x" id="flight2ID">boeinglax747a999b</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div>
+                        <p>
+                          <span class="text-dark">
+                            <em class="fa fa-map-marker fa-1x"></em>
+                            Los Angeles, CA
+                          </span>
+                          <span class="text-dark">
+                            <em class="fa fa-clock-o fa-1x"></em>
+                            1h 30m
+                          </span>
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          <span class="text-dark">
+                            <em class="fa fa-calendar fa-1x"></em>
+                            Jan 18, 2019
+                          </span>
+                          <span class="text-dark">
+                            <em class="fa fa-user fa-1x"></em>
+                            3 Passengers
+                          </span>
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          <span class="text-dark">
+                            <em class="fa fa-plane fa-1x"></em>
+                            Non-stop
+                          </span>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -403,14 +406,14 @@
           <div class="card">
             <div class="card-header">
               <h4>
-                <em class="fa fa-calendar"></em> Schedule your flights and your trip itinerary
+                <em class="fa fa-calendar fa-3x"></em> Schedule your flights and your trip itinerary
               </h4>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="cardholder">
                   <h2>
-                    <em class="fa fa-calendar"></em>
+                    <em class="fa fa-calendar fa-1x"></em>
                     Itinerary
                   </h2>
                   <div class="container-fluid">
@@ -426,22 +429,22 @@
                             <form>
                               <div class="form-group">
                                 <label for="" aria-label="Read more about Seminole tax hike">
-                                  <em class="fa fa-plane"></em>
+                                  <em class="fa fa-plane fa-2x"></em>
                                   Enter Flight ID:
                                 </label>
                                 <input
                                   type="text"
                                   class="form-control"
                                   id="enterFlightIDId"
-                                  aria-describedby="enter Flight ID"
+                                  aria-describedby="Enter Flight ID"
                                   placeholder="Enter Flight ID" />
                                 <div class="form-group">
                                   <label for="">
-                                    <em class="fa fa-calendar"></em>
+                                    <em class="fa fa-calendar fa-2x"></em>
                                     Departure
                                   </label>
                                   <input
-                                    type="date"
+                                    type="datetime"
                                     class="form-control"
                                     placeholder="MM/DD/YYYY"
                                     id="departureDate"
@@ -450,11 +453,11 @@
                                 </div>
                                 <div class="form-group">
                                   <label>
-                                    <em class="fa fa-calendar"></em>
+                                    <em class="fa fa-calendar fa-2x"></em>
                                     Return
                                   </label>
                                   <input
-                                    type="date"
+                                    type="datetime"
                                     class="form-control"
                                     placeholder="MM/DD/YYYY"
                                     id="returnDate"
@@ -463,7 +466,7 @@
                                 </div>
                                 <div class="form-group">
                                   <label>
-                                    <em class="fa fa-map-marker"></em>
+                                    <em class="fa fa-map-marker fa-2x"></em>
                                     Location
                                   </label>
                                   <input
@@ -476,7 +479,7 @@
                                 </div>
                                 <div class="form-group">
                                   <label>
-                                    <em class="fa fa-clock-o"></em>
+                                    <em class="fa fa-clock-o fa-2x"></em>
                                     Duration
                                   </label>
                                   <input
@@ -489,7 +492,7 @@
                                 </div>
                                 <div class="form-group">
                                   <label>
-                                    <em class="fa fa-user"></em>
+                                    <em class="fa fa-user fa-2x"></em>
                                     Passengers
                                   </label>
                                   <input
@@ -502,10 +505,10 @@
                                 </div>
                                 <div class="form-group">
                                   <label>
-                                    <em class="fa fa-plane"></em>
+                                    <em class="fa fa-plane fa-2x"></em>
                                     Non-stop
                                   </label>
-                                  <select class="form-control" id="nonStop" name="nonStop">
+                                  <select title="nonStop" class="form-control" id="nonStop" name="nonStop">
                                     <option>
                                       Yes
                                     </option>
@@ -516,7 +519,7 @@
                                 </div>
                                 <div class="form-group">
                                   <label>
-                                    <em class="fa fa-money"></em>
+                                    <em class="fa fa-money fa-2x"></em>
                                     Price
                                   </label>
                                   <input
@@ -529,7 +532,7 @@
                                 </div>
                               </div>
                               <button type="submit" class="btn btn-primary">
-                                <em class="fa fa-plane"></em>
+                                <em class="fa fa-plane fa-2x"></em>
                                 Schedule
                               </button>
                             </form>
@@ -541,7 +544,7 @@
                           <div class="card">
                             <div class="card-header">
                               <h4>
-                                <em class="fa fa-plane"></em>
+                                <em class="fa fa-plane fa-2x"></em>
                                 Flight ID's <br>
                                 Trip Planner Itinerary
                               </h4>
@@ -552,7 +555,7 @@
                                   <div class="card">
                                     <div class="card-header">
                                       <h4>
-                                        <em class="fa fa-plane"></em>
+                                        <em class="fa fa-plane fa-2x"></em>
                                         Trip Planner ID
                                       </h4>
                                     </div>
@@ -562,7 +565,7 @@
                                           <label for="alian" class="form-label">Are you an Outer or illegal
                                             alien?</label>
                                           <input type="text" class="form-control" id="uname"
-                                            placeholder="You better not run!"" name=" uname" required>
+                                            placeholder="You better not run!" name=" uname" required>
                                           <div class="valid-feedback">Valid.</div>
                                           <div class="invalid-feedback">Please fill out this field or get tazed! TSA!
                                             TSA! Like USA! USA!</div>
@@ -584,7 +587,7 @@
                                   <div class="card">
                                     <div class="card-header">
                                       <h4>
-                                        <em class="fa fa-plane"></em>
+                                        <em class="fa fa-plane  fa-2x"></em>
                                         Place of Stay
                                       </h4>
                                     </div>
@@ -619,20 +622,19 @@
                                   will go to jail for life!</button>
 
                                 <p>
-                                  <em class="fa fa-plane"></em>
+                                  <em class="fa fa-plane fa-2x"></em>
                                   <span class="text-dark">
                                     Country of Travel
                                   </span>
-                                  <input type="text" class="form-control" id="CountryTravelId" name="CountryTravel"
+                                  <input title="countryTravelId" type="text" class="form-control" id="countryTravelId" name="countryTravel"
                                     value="" />
                                 </p>
                                 <p>
-                                  <em class="fa fa-calendar"></em>
+                                  <em class="fa fa-calendar fa-2x"></em>
                                   <span class="text-dark">
                                     City of Travel
                                   </span>
-                                  <input type="text" class="form-control" id="cityTravelId" name="cityTravel"
-                                    value="" />
+                                  <input title="cityTraveId" type="text" class="form-control" id="cityTravelId" name="cityTravel"/>
                                 </p>
                               </div>
                             </div>
@@ -652,7 +654,7 @@
                     Flight Schedule
                   </h4>
                   <div class="card-body">
-                    <table class="table table-striped">
+                    <table class="table table-striped" aria-describedby="tablebodycard">
                       <thead>
                         <tr>
                           <th>
@@ -840,139 +842,27 @@
                     <div class="row">
                       <div class="col-lg-12 text-center">
                         <h2 class="section-heading text-uppercase">Contact Us:</h2>
-                          <label class="navbar-text">
-                            <a href="
-                                                                                https://www.linux.com/
-                                                                                " target="_blank" class="navbar-link">
-                              <i class="fa fa-linux fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                                https://www.windows.com/
-                                                                                " target="_blank" class="navbar-link">
-                              <i class="fa fa-windows fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                      https://www.android.com/
-                                                                      " target="_blank" class="navbar-link">
-                              <i class="fa fa-android fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                      https://www.apple.com/
-                                                                      " target="_blank" class="navbar-link">
-                              <i class="fa fa-apple fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="https://www.safari.com/" target="_blank" class="navbar-link">
-                              <i class="fa fa-safari fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                      https://www.chrome.com/
-                                                                      " target="_blank" class="navbar-link">
-                              <i class="fa fa-chrome fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                      https://www.google.com/
-                                                                      " target="_blank" class="navbar-link">
-                              <i class="fa fa-google fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                      https://www.reddit.com/
-                                                                      " target="_blank" class="navbar-link">
-                              <i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                      https://www.yelp.com/
-                                                                      " target="_blank" class="navbar-link">
-                              <i class="fa fa-yelp fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                      https://www.linkedin.com/
-                                                                      " target="_blank" class="navbar-link">
-                              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://www.facebook.com/boundlistadventures/
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://www.instagram.com/boundlistadventures/
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://www.youtube.com/watch?v=o-YBDTqX_ZU
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://twitter.com/boundlist-adventures/
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://www.linkedin.com/company/boundlist-adventures/
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://www.pinterest.com/boundlist-adventures/
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://www.tripadvisor.com/boundlist-adventures/
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-tripadvisor fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://www.booking.com/boundlist-adventures/
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
-                          
-                          <label class="navbar-text">
-                            <a href="
-                                                                            https://www.amazon.com/
-                                                                            " target="_blank" class="navbar-link">
-                              <i class="fa fa-amazon fa-2x" aria-hidden="true"></i>
-                            </a>
-                          </label>
+                        <label class="navbar-text">
+                          <a target="_black" rel="noopener noreferrer nofollow" title="linux" href="https://www.linux.com/" class="navbar-link fa fa-linux fa-3x" aria-hidden="true"></a>
+                        </label>
+                        <label class="navbar-text">
+                          <a target="_black" rel="noopener noreferrer nofollow" title="windows" href="https://www.windows.com/" class="navbar-link fa fa-windows fa-3x" aria-hidden="true"></a>
+                        </label>
+                        <label class="navbar-text">
+                          <a target="_black" rel="noopener noreferrer nofollow" title="android" href="https://www.android.com/" class="navbar-link fa fa-android fa-3x" aria-hidden="true"></a>
+                        </label>
+                        <label class="navbar-text">
+                          <a target="_black" rel="noopener noreferrer nofollow" title="apple" href="https://www.apple.com/" class="navbar-link fa fa-apple fa-3x" aria-hidden="true"></a>
+                        </label>
+                        <label class="navbar-text">
+                          <a target="_black" rel="noopener noreferrer nofollow" title="safari" href="https://www.safari.com/" class="navbar-link fa fa-safari fa-3x"  aria-hidden="true"></a>
+                        </label>
+                        <label class="navbar-text">
+                          <a target="_black" rel="noopener noreferrer nofollow" title="chrome" href="https://www.chrome.com/" class="navbar-link fa fa-chrome fa-3x" aria-hidden="true"></a>
+                        </label>
+                        <label class="navbar-text">
+                          <a target="_black" rel="noopener noreferrer nofollow" title="google" href="https://www.google.com/"  class="navbar-link fa fa-google fa-3x" aria-hidden="true"></a>
+                        </label>
                         <h3 class="section-subheading text-muted">
                           If you have any questions, please feel free to contact us.
                         </h3>
@@ -1058,19 +948,13 @@
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="#">
-                <i class="fa fa-twitter"></i>
-              </a>
+              <a class="fa fa-github fa-2x" target="_black" rel="noopener noreferrer nofollow" title="github" href="htmls://www.github.com">github</a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
-                <i class="fa fa-facebook"></i>
-              </a>
+              <a class="fa fa-gitlab fa-2x" target="_black" rel="noopener noreferrer nofollow" title="gitlab" href="#htmls://www.gitlab.com">gitlab</a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
-                <i class="fa fa-linkedin"></i>
-              </a>
+              <a class="fa fa-h-square fa-2x" target="_black" rel="noopener noreferrer nofollow" title="heroku" href="#htmls://www.heroku.com">heroku</a>
             </li>
           </ul>
         </div>
@@ -1089,24 +973,22 @@
   </footer>
 
 
-
-
   <!-- Bootstrap core JavaScript -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script target="_black" rel="noopener noreferrer nofollow"  src="assets/vendor/jquery/jquery.min.js"></script>
+  <script target="_black" rel="noopener noreferrer nofollow"  src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script target="_black" rel="noopener noreferrer nofollow" src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Contact form JavaScript -->
-  <script src="assets/js/jqBootstrapValidation.js"></script>
-  <script src="assets/js/contact_me.js"></script>
+  <script target="_black" rel="noopener noreferrer nofollow" src="assets/js/jqBootstrapValidation.js"></script>
+  <script target="_black" rel="noopener noreferrer nofollow" src="assets/js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="assets/js/agency.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script target="_black" rel="noopener noreferrer nofollow" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script target="_black" rel="noopener noreferrer nofollow" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script target="_black" rel="noopener noreferrer nofollow" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
