@@ -13,7 +13,7 @@ function App() {
   return (
 <div>
     <div className="App">
-        <h1> Boundlist Adventures Calendar </h1>
+        <h1> Bound list Adventures Calendar </h1>
       </div>
       <div>
         <GoogleLogin clientId='739819841055-v1hjgm125rin2g5qts9phuocp1nrro5l.apps.googleusercontent.com'
@@ -26,7 +26,7 @@ function App() {
         scope='openid email profile https://www.googleapis.com/auth/calendar'
         />
       </div>
-      </div>
+    </div>
   );
 }
 
