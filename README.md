@@ -1,6 +1,5 @@
 
 
-![badge](https://img.shields.io/badge/license-apache-blue)
 
 ![Logo](https://user-images.githubusercontent.com/95839411/170887762-c24a9211-00a3-43b8-868f-d6375e6a6791.png)
 
@@ -9,7 +8,6 @@
   ## Table-of-Contents
   * [Description and Task](#description)
   * [Technology](#technology)
-  * [Video](#video)
   * [Website](#table-of-contents)
   * [License](#license)   
   * [Contributors](#Contributors)
@@ -59,10 +57,13 @@ Html: React's
 
  ## [Website](#table-of-contents)
  Deployed Application: (insert here)
+ 
+ ## [License](#table-of-contents)
+ ![badge](https://img.shields.io/badge/license-apache-blue)
   
  ## [Contributors](#table-of-contents)
   
-  Rachel Schaff, Lanika Thomas, Jose Lemuz, Nik Sharpio, Arbi Nazari, Edgar A. 
+  Pablo Lopez-Cardon, Nik Sharpio, Lanika Thomas, Simran Kaur, Arbi Nazari, Kota Sawada, Daylon Polk. 
 
 - github.com/niksharpkings
 - github.com/Lanikathomas
