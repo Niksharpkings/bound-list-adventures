@@ -3,7 +3,7 @@
 
 ![Logo](https://user-images.githubusercontent.com/95839411/170887762-c24a9211-00a3-43b8-868f-d6375e6a6791.png)
 
-# Group Project #3: BoundListAdventures
+# Group Project #3: BoundListAdventures.com
 
   ## Table-of-Contents
   * [Description and Task](#description)
