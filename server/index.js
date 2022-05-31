@@ -2,17 +2,22 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
+const corsOptions ={
+  origin:'http://localhost:3000', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200
+}
 
 import postRoutes from './routes/posts.js';
 //import userRouter from "./routes/user.js";
 
 const app = express();
 
-app.use('/posts', postRoutes);
-
 app.use(express.json({ limit: "30mb", extended: true }))
 app.use(express.urlencoded({ limit: "30mb", extended: true }))
-app.use(cors());
+app.use(cors(corsOptions));
+
+app.use('/posts', postRoutes);
 
 // Connect to MongoDB
 const CONNECTION_URL ='mongodb+srv://Waddles:Waddles123@cluster0.xwsks3h.mongodb.net/?retryWrites=true&w=majority'

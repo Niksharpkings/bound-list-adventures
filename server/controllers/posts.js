@@ -1,4 +1,8 @@
+import express from 'express';
+
 import PostMessage from '../models/postMessage.js';
+
+const router = express.Router();
 
 export const getPosts =  async (req, res) => { res.send('This is the posts page');
 try {
@@ -12,7 +16,7 @@ try {
 } };
 
 
-export const createPost = (req, res) => { 
+export const createPost = async (req, res) => { 
     const post = req.body;
 
     const newPost = new PostMessage(post);
@@ -26,3 +30,4 @@ export const createPost = (req, res) => {
     }
 };
 
+export default router;
