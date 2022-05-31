@@ -2,21 +2,21 @@ import express from 'express';
 
 import PostMessage from '../models/postMessage.js';
 
-const router = express.Router();
+export const getPosts = async (req, res) => {
+    res.send('This is the posts page');
+    try {
+        const postMessage = await PostMessage.find();
+        console.log(postMessage);
 
-export const getPosts =  async (req, res) => { res.send('This is the posts page');
-try {
-    const postMessage = await PostMessage.find();
-    console.log(postMessage);
+        res.status(200).json(postMessage);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
 
-    res.status(200).json(postMessage);
-} catch (error) {
-    res.status(404).json({ message: error.message });
-    
-} };
+    }
+};
 
 
-export const createPost = async (req, res) => { 
+export const createPost = async (req, res) => {
     const post = req.body;
 
     const newPost = new PostMessage(post);
