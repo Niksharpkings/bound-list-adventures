@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import memories from './images/Logo1.png';
 import Header from './components/Header';
+import Home from './components/Home';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -38,10 +39,10 @@ const App = () => {
           <Header />
           <div className="container">
             <Routes>
-              {/* <Route
+              <Route
                 path="/"
                 element={<Home />}
-              /> */}
+              />
               <Route
                 path="/login"
                 element={<Login />}
