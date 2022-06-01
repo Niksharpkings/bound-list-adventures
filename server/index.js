@@ -1,7 +1,7 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import cors from 'cors';
+const express = require('express');
+const path = require('path');
+// import ApolloServer
+const { ApolloServer } = require('apollo-server-express');
 
 import postRoutes from './routes/posts.js';
 //import userRouter from "./routes/user.js";
@@ -10,9 +10,7 @@ const app = express();
 
 app.use(express.json({ limit: "30mb", extended: true }))
 app.use(express.urlencoded({ limit: "30mb", extended: true }))
-app.use(cors({
-  origin: 'http://localhost:3000'
-}));
+app.use(cors());
 
 app.use('/posts', postRoutes);
 
