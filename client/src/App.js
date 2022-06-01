@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
+import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 
+import LoginForm  from './components/LoginForm';
+import SignupForm from './components/SignupForm';
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import memories from './images/Logo1.png';

@@ -13,8 +13,7 @@ var getLocationId = function (locationName) {
     fetch(apiURL, options)
         .then(function (response) {
             response.json().then(function (data) {
-                
-                locationID = data.data[0].result_object.location_id;
+                let locationID = data.data[0].result_object.location_id;
                 get10Attractions(locationID);
             })
         })
