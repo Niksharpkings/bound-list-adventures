@@ -10,10 +10,17 @@ const placeSchema = new Schema({
     type: String,
     required: true,
   },
+  placeName: {
+    type: String,
+    required: true,
+  },
+  rating: {
+    type: String,
+  },
   image: {
     type: String,
   },
-  placeName:{
+  attractionName:{
     type: String,
     required: true,
   },

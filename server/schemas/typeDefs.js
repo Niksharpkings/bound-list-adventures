@@ -10,7 +10,8 @@ const typeDefs = gql`
 
   type Place {
     placeId: ID!
-    placeName: String!
+    placeName: String
+    attractionName: String!
     description: String
     image: String
     attractionType: String
