@@ -70,7 +70,6 @@ Html: React's
 - github.com/Simmy21
 - github.com/Waddles1005
 - github.com/CodySawa
-- github.com/Daypolk19
 - github.com/ArbiNazari
 
   ## [Questions](#table-of-contents)
