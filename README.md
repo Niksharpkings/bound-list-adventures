@@ -63,11 +63,10 @@ Html: React's
   
  ## [Contributors](#table-of-contents)
   
-  Pablo Lopez-Cardon, Nik Sharpio, Lanika Thomas, Simran Kaur, Arbi Nazari, Kota Sawada, Daylon Polk. 
+  Pablo Lopez-Cardon, Nik Sharpio, Lanika Thomas, Arbi Nazari, Kota Sawada. 
 
 - github.com/niksharpkings
 - github.com/Lanikathomas
-- github.com/Simmy21
 - github.com/Waddles1005
 - github.com/CodySawa
 - github.com/ArbiNazari
