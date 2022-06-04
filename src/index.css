@@ -1,0 +1,68 @@
+body {
+  font-family: Work Sans;
+  text-align: center;
+  background-color: rgb(252, 252, 252);
+
+}
+
+.content {
+  font-size: 24px;
+  color: rgba(101, 8, 8, 0.536);
+}
+
+
+.navbar, .navbar-brand {
+  text-align: left;
+  display: block;
+  width: 100%;
+  background-color: #46749c;
+  
+}
+
+div.navbar-brand {
+  padding-top: 3em;
+  margin-bottom: 3em;
+  
+}
+
+.pic {
+  width: 600px;
+  height: 600px;
+  align-items: center;
+
+}
+
+.navbar .navbar-brand > .navbar-item,
+.navbar .navbar-brand .navbar-link {
+  display: inline-block;
+}
+
+main {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+.label {
+  text-align: left;
+}
+
+footer.footer {
+  background-color: rgb(143, 62, 62)e;
+}
+
+.footer1 {
+  font-size: 12px;
+  background-color: rgb(255, 0, 0)e;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    main {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+}
