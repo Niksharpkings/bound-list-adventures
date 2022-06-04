@@ -35,16 +35,16 @@ And what activities they will be doing during their trip to their destination be
 
 Specifications:
 CSS: Semantic UI
-Javascrip: React's
+JavaScript: React's
 Html: React's
 
 # Site Deployment: Heroku (with Data: MongoAtlas)
-# Database: Mongodb and Mongoose ODM
+# Database: MongoDB and Mongoose ODM
 
  ## [Technology](#technology)
 
   - Node.js
-  - CSS/Bootstrp
+  - CSS/Bootstrap
   - Express
   - HandlebarsJS
   - Bcrypt
