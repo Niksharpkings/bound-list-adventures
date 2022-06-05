@@ -38,7 +38,7 @@ const server = new ApolloServer(
         'schema.polling.enable': true, // enables automatic schema polling boolean,
         'schema.polling.endpointFilter': '*localhost*', // string, endpoint filter for schema polling
         'schema.polling.interval': 2000, // schema polling interval in ms number,
-        'schema.disableComments': boolean,
+        'schema.disableComments': false, // boolean, disables schema comments
         'tracing.hideTracingResponse': true, //boolean,
         'tracing.tracingSupported': true,  // set false to remove x-apollo-tracing header from Schema fetch request
       },
@@ -50,9 +50,9 @@ const server = new ApolloServer(
 const app = express();
 
 // Parse incoming requests with JSON payloads
-app.use(express.urlencoded({ extended: false })); 
+app.use(express.urlencoded({ extended: false }));
 // app is the Express serve is the JSON payload
-app.use(express.json()); 
+app.use(express.json());
 
 // Serve up static assets
 // Serve up production assets if in production mode (e.g. on Heroku)
@@ -64,7 +64,7 @@ if (process.env.NODE_ENV === 'production') {  // If the NODE_ENV is production (
   app.use(express.static(path.join(__dirname, '../client/public')));
 }
 // app get request to * client build index html file 
-app.get('*', (req, res) => { 
+app.get('*', (_req, res) => { 
   // Serve up production assets (built client) from the /build directory (e.g. /build/index.html)
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
@@ -75,22 +75,22 @@ const startApolloServer = async () => {
   server.applyMiddleware({ app, path: '/graphql' });
 
   // server middleware to express
-  server.applyMiddleware({ 
-    app, // Express server instance
-    path: '/graphql', // GraphQL endpoint path
-    cors: false, // enable CORS
+  server.applyMiddleware({
+    app,
+    path: '/graphql',
+    cors: false,
     bodyParserConfig: false, // disable bodyParser
   });
 
 
-  await db.once('open', () => { // 
-    app.listen(PORT, () => { // Listen on the specified port
+  await db.once('open', () => {
+    app.listen(PORT, () => {
       console.log(`API server running on port ${PORT}!`); //  Log to the console that the server is running on the specified port 
       console.log(`Server started on port ${PORT}`); // Log to the console that the server is running on the specified port
       console.table(`GraphQL server info: ${server.graphqlPath} ${server.subscriptionsPath}  ${server.playgroundPath} `); // Log a message to the console with GraphQL server info 
       console.log(`🚀 GraphQL Server ready at https://localhost:${PORT}${server.graphqlPath}`); // Log a message to the console with GraphQL server info 
       console.log(`Use GraphQL at https://localhost:${PORT}${server.graphqlPath}`); // Log a message to the console with GraphQL server info
-    }) // Listen on the specified port
+    }); // Listen on the specified port
   });
 };
 

@@ -1,5 +1,5 @@
-const { Schema } = require('mongoose');
-const dateFormat = require('../utils/dateFormat');
+import { Schema } from 'mongoose';
+import dateFormat from '../utils/dateFormat';
 
 const reactionSchema = new Schema(
   {
@@ -25,4 +25,4 @@ const reactionSchema = new Schema(
   }
 );
 
-module.exports = reactionSchema;
+export default reactionSchema;
