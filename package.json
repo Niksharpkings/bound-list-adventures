@@ -1,5 +1,6 @@
 {
-  "name": "bound-less-adventures",
+  "homepage": "https://github.com/Niksharpkings/bound-list-adventures/",
+  "name": "boundlust",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -38,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "![badge](https://img.shields.io/badge/license-apache-blue)",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

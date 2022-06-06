@@ -15,7 +15,7 @@
 
 ## BoundListAdventures - Application Design and Concept
 
-It’s a Tripadvisory itinerary manager that allows the user to see there schedule flights
+It’s a trip advisory itinerary manager that allows the user to see there schedule flights
 And what activities they will be doing during their trip to their destination before heading back to their original location.
 
 ## Task:

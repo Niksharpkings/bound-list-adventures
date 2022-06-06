@@ -47,7 +47,6 @@ function Project(props) {
                       <a
                         href={project.live}
                         className="card-footer-item"
-           
                       >
                         Modify My Arrival Time - Alert
                       </a>

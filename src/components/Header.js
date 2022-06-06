@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Hotels from "./Hotels";
 import Activity from "./Activity";
+import Login from "./Login";
 
 function Header() {
   const [currentPage, handlePageChange] = useState("About");
@@ -20,8 +21,10 @@ function Header() {
         return <Hotels />;
       case "My Activity Planner":
         return <Activity />;
-        case "Contact Us":
-          return <Contact />;
+      case "Contact Us":
+        return <Contact />;
+      case "Login/Register":
+        return <Login />;
       default:
         return <About />;
     }
